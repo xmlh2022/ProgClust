@@ -29,7 +29,24 @@ library(apcluster)
 source("F:/LH/code/GiniClust2_packages.R")
 source("F:/LH/code/ISClust_GiniClust2_functions.R")
 
+#Simulation data
+
 ExprM.RawCounts <- read.table("F:/LH/GiniClust2/Proj/Simulation/data/Data_2000_1000_10_6_4_3.xls", sep="\t", head=TRUE, row.names=1)
+
+# # mouse embryonic stem cells
+# ExprM.RawCounts <- read.delim("F:/LH/GiniClust2/Proj/breast2/GSM1599498_ES_d4_LIFminus.csv", sep=",", head=F)
+# ExprM.RawCounts.b<-ExprM.RawCounts
+# ExprM.RawCounts<-ExprM.RawCounts2
+# #raw data
+# title=c("Symbol");
+# for(i in 2:ncol(ExprM.RawCounts)){
+#   title=c(title,paste(exprimentID, ".Cell_",i-1,sep=""))
+# };
+# colnames(ExprM.RawCounts)=title
+# rownames(ExprM.RawCounts)=ExprM.RawCounts[,1]
+# ExprM.RawCounts= ExprM.RawCounts[,-1]
+
+
 dim(ExprM.RawCounts)
 
 #filtering
