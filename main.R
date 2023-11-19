@@ -16,10 +16,10 @@ Gamma                = 0.99                                             # parame
 
 #ProgClust parameters
 
-crit=3.5
-o_crit=0.2
-k_crit =0.12
-filt_c=1
+crit=3.5                                                               # consistent with ros in the paper, criteria for identifying rare cells.. 
+o_crit=0.2                                                             # consistent with os in the paper, criteria for identifying rare cells.. 
+k_crit =0.12                                                           # control the number of clusters. 
+filt_c=1                                                               # filter cells with low expression levels.
 
 # packages
 library(speccalt)
